@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEUS MENU FREE v3.0</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .menu {
+      background-color: #1a1a1a;
+      border: 2px solid #00ff00; /* เปลี่ยนเป็นสีเขียว */
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 20px #00ff00; /* เปลี่ยนเป็นสีเขียว */
+    }
+
+    .menu h2 {
+      color: #00ff00; /* เปลี่ยนเป็นสีเขียว */
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    select, input[type="range"] {
+      width: 100%;
+      margin-bottom: 15px;
+      background-color: #222;
+      color: white;
+      border: 1px solid #00ff00; /* เปลี่ยนเป็นสีเขียว */
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .slider-label {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <h2>ZEUS MENU FREE v3.0</h2>
+    <label><input type="checkbox" checked> เปิดดูดหัว</label>
+
+    <label for="mode1">เลือกระดับยิงหัว</label>
+    <select id="mode1">
+      <option>HIGH = สูง</option>
+      <option>LOW = ต่ำ</option>
+    </select>
+
+    <label for="mode2">เลือกโหมดที่เล่น</label>
+    <select id="mode2">
+      <option>1-1</option>
+      <option>ดันแรงค์</option>
+      <option>ทั่วไปและอื่นๆ</option>
+    </select>
+
+    <label><input type="checkbox"> กระสุนตรง 44%</label>
+    <label><input type="checkbox"> ช่วยลาก 80%</label>
+    <label><input type="checkbox"> เพิ่มจอไว 40%</label>
+    <label><input type="checkbox"> ตอบสนองไวขึ้น</label>
+    <label><input type="checkbox"> กันแบน - กันดำ - กันรายงาน </label>
+
+    <div class="slider-label">ปรับความไวการลากหัว</div>
+    <input type="range" min="1" max="10" value="1">
+  </div>
+</body>
+</html>
